@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease;
+}
+
+.stats {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#egg {
+  background: radial-gradient(circle, gold, orange);
+  font-size: 30px;
+  box-shadow: 0 0 25px gold;
+}
+
+#egg.tap {
+  animation: bounce 0.4s;
+}
+
+#watchAd {
+  background: #22c55e;
+}
+
+.referral input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.withdraw, .freebies {
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+}
+
+.withdraw button, .freebies button {
+  background: #f59e0b;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.withdraw button:hover, .freebies button:hover {
+  transform: scale(1.05);
+}
+
+#cooldown {
+  margin-top: 10px;
+  color: #facc15;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

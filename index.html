@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tap Egg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="//libtl.com/sdk.js" data-zone="10570231" data-sdk="show_10570231"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🥚 Tap Egg Game</h2>
+
+  <div class="stats">
+    <p>📊 MB Earned: <span id="mb">0</span> MB</p>
+    <p>👆 Taps Left Today: <span id="taps">20</span></p>
+    <p>🎥 Videos Left: <span id="videos">5</span></p>
+  </div>
+
+  <button id="egg">🥚 TAP EGG</button>
+  <p id="cooldown"></p>
+
+  <button id="watchAd">🎥 Watch Video</button>
+
+  <div class="referral">
+    <p>👥 Referral Bonus: +20MB</p>
+    <input id="refLink" readonly />
+    <button id="copyRef">📋 Copy Link</button>
+  </div>
+
+  <div class="withdraw">
+    <h3>💸 Weekly Withdrawal</h3>
+    <p>Minimum: <b>100MB</b></p>
+    <p>Status: <span id="withdrawStatus"></span></p>
+    <button id="withdrawBtn">📤 Submit Proof</button>
+  </div>
+
+  <div class="freebies">
+    <h3>🎁 Weekly Freebies</h3>
+    <button id="freebiesBtn">📲 Go to Telegram Channel</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
